@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".inputData">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Information About the Medicine:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name of Medicine"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Expiry date of Medicine "
+        android:inputType="textPersonName" />
+
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/quantity_of_item_selected"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        app:initialNumber="1"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    <TextView
+        android:id="@+id/m_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NO Alarms"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/add_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SET Alarm" />
+
+    <Button
+        android:id="@+id/del_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete alarm" />
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
